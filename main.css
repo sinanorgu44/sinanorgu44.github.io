@@ -1,0 +1,27 @@
+body{
+    background-color: #a9a6d3;
+    margin: auto;
+}
+
+h2,h1{
+    text-align: center;
+}
+
+.konular{
+    height: fit-content;
+    width: 50%;
+    position: relative;
+    background-color: aliceblue;
+    border: #000000 solid ;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+
+.konular:hover{
+    background-color: aqua  ;
+}

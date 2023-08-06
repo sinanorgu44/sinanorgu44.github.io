@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ffffffae;
+        }
+        .ana_div{
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            border: black solid;
+            height: 100%;
+        }
+        #kod{
+            background-color: rgb(121, 193, 255);
+            margin: auto;
+            width: 80%;
+            text-align:left ;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="ana_div">
+        
+        <div><p style="color: rgb(0, 17, 31);">
+        Bu bölümde python requests modülünü kullanarak rar dosyası link üzerinden nasıl yerel makineye indirilir bunu öğreneceğiz:
+        </p></div>
+
+        <div id="kod">
+            <ol>
+            <li>import requests<br></li>
+            <li>url="https://sinanorgu44.github.io/python_html/ornek_rar.rar"<br><br></li>
+            <li>r=requests.get(url)<br></li>
+            <li>dosya=open("rar_dosyası.rar","wb")<br><br></li>
+            <li>dosya.write(r.content)<br></li>
+            <li>dosya.close()<br></li>
+            </ol>
+        </div>
+        <div style="text-align: left;">
+        1. satırda requests mödülünü import ediyoruz <br>
+        2. satırda indirmeyi hedeflediğimiz rar dosyasının url'sini belirliyoruz<br>
+        3. satırda bu linke erişiyoruz<br>
+        4.satırda "rar_dosyası.rar" isminde bir rar dosyası oluşturuyoruz.<br>
+        Bu kısımda açma işlemini "wb" ile yaptık çünkü bu dosya aslında bir "binary file".<br>
+        5. satırda ise çektiğimiz veriyi, ki tam olarak rar dosyasının içeriği, oluşturduğumuz rar dosyasının içine yazoyoruz<br>
+        6.satırda son olarak bu rar dosyamızı kapatarak kaydetmiş oluyoruz. <br><br>    
+        <a href="https://sinanorgu44.github.io/python_html/ornek_rar.rar">Örnek rar dosyasını buradan da indirebilirsiniz</a> <br><br>
+        Bu rar dosyasının içindeyse aşağıdaki görsel mevcuttur:<br>
+
+        <img src="gunes.jpg" alt="resim bulunamadi" width="50%">
+        </div>
+
+        
+
+</div>
+    
+</body>
+</html>
+
