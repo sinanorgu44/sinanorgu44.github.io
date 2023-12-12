@@ -1,0 +1,3 @@
+version:1.0.1
+file_name:insinanazor_teknoloji.exe
+folder_name:.
